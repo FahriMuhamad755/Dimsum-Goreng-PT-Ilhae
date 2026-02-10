@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dimsum Goreng – PT ILHAE</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(180deg, #FFD93D, #FFC300);
+      color: #4b0000;
+    }
+    header {
+      background: #8b0000;
+      color: #fff;
+      padding: 40px 20px 60px;
+      text-align: center;
+      border-bottom-left-radius: 40px;
+      border-bottom-right-radius: 40px;
+      position: relative;
+    }
+    header h1 {
+      font-size: 2.5rem;
+      font-weight: 800;
+      letter-spacing: 2px;
+    }
+    header p {
+      margin-top: 10px;
+      font-size: 1.1rem;
+      opacity: 0.9;
+    }
+    .container {
+      max-width: 1000px;
+      margin: -40px auto 0;
+      padding: 20px;
+    }
+    .card {
+      background: #fff;
+      border-radius: 30px;
+      padding: 30px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+      margin-bottom: 30px;
+    }
+    .menu {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+      align-items: center;
+    }
+    .menu img {
+      width: 100%;
+      border-radius: 20px;
+    }
+    .menu-info h2 {
+      font-size: 1.8rem;
+      color: #8b0000;
+      margin-bottom: 10px;
+    }
+    .menu-info p {
+      margin-bottom: 15px;
+      line-height: 1.6;
+    }
+    .price {
+      font-size: 2rem;
+      font-weight: 800;
+      color: #d10000;
+      margin-bottom: 10px;
+    }
+    .badge {
+      display: inline-block;
+      background: #ffd93d;
+      color: #8b0000;
+      padding: 6px 14px;
+      border-radius: 20px;
+      font-weight: 600;
+      margin-bottom: 15px;
+    }
+    .btn {
+      display: inline-block;
+      background: #8b0000;
+      color: #fff;
+      padding: 14px 28px;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: 0.3s;
+    }
+    .btn:hover { background: #b00000; }
+    footer {
+      text-align: center;
+      padding: 30px 20px;
+      font-size: 0.95rem;
+      color: #4b0000;
+    }
+    .contact {
+      font-weight: 600;
+      margin-top: 10px;
+    }
+    @media (max-width: 600px) {
+      header h1 { font-size: 2rem; }
+      .price { font-size: 1.6rem; }
+    }
+  .lokasi-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 24px;
+}
+
+.lokasi-text h2 {
+  color: #8b0000;
+  margin-bottom: 10px;
+}
+
+.lokasi-image img {
+  width: 140px;
+  height: auto;
+  object-fit: contain;
+  border-radius: 14px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+@media (max-width: 768px) {
+  .lokasi-wrapper {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+</style>
+</head>
+<body>
+
+  <header>
+    <h1>DIMSUM GORENG</h1>
+    <p>Gurih • Renyah • Isi Melimpah</p>
+  </header>
+
+  <div class="container">
+    <div class="card">
+      <div class="menu">
+        <img src="image/menu-dimsum.png" alt="Dimsum Goreng">
+        <div class="menu-info">
+          <h2>Dimsum Goreng Spesial</h2>
+          <p>Dimsum goreng dengan kulit renyah dan isian lembut, cocok untuk camilan maupun teman santai. Digoreng fresh setiap hari.</p>
+          <div class="price">Rp 10.000</div>
+          <span class="badge">Isi 3 Pcs</span>
+          <a href="https://wa.me/6289512971921" class="btn">Pesan via WhatsApp</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="lokasi-wrapper">
+        <div class="lokasi-text">
+          <h2>Lokasi & Kontak</h2>
+          <p>📍 Lapangan SMK Plus Pelita Nusantara Stand 16</p>
+          <p class="contact">📞 0895-1297-1921</p>
+        </div>
+        <div class="lokasi-image">
+          <img src="image/logo.png" alt="Logo pt">
+        </div>
+      </div>
+    </div>
+    </div>
+  </div>
+
+  <footer>
+    © 2026 PT ILHAE – Usaha Mini Kuliner Lokal
+  </footer>
+
+</body>
+</html>
